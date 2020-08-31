@@ -124,6 +124,7 @@ RUN apt-get update \
 	curl \
 	dvipng \
 	gcc \
+	iputils-ping \
 	libapache2-request-perl \
 	libcrypt-ssleay-perl \
 	libdatetime-perl \

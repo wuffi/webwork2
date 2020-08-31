@@ -42,7 +42,7 @@ FROM alpine/git AS base
 # build args specifying the branches for webwork2 and pg used to build the image
 
 # To use the master branches of webwork2 and pg 
-ARG WEBWORK2_GIT_URL=https://github.com/openwebwork/webwork2.git
+ARG WEBWORK2_GIT_URL=https://github.com/wuffi/webwork2.git
 ARG WEBWORK2_BRANCH=master
 ARG PG_GIT_URL=https://github.com/openwebwork/pg.git
 ARG PG_BRANCH=master
@@ -84,7 +84,7 @@ ENV WEBWORK_URL=/webwork2 \
     WEBWORK_ROOT_URL=http://localhost \
     WEBWORK_SMTP_SERVER=localhost \
     WEBWORK_SMTP_SENDER=webwork@example.com \
-    WEBWORK_TIMEZONE=America/New_York \
+    WEBWORK_TIMEZONE=Europe/Berlin \
     APACHE_RUN_USER=www-data \
     APACHE_RUN_GROUP=www-data \
     # temporary state file location. This might be changed to /run in Wheezy+1 \
